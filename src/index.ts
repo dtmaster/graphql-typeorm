@@ -14,13 +14,14 @@ const typeDefs = `
   }
   type Mutation {
     addUser(name: String!, email: String!): User
+
   }
 `;
 
 const resolvers = {
   Query: {
     hello: (_, { name }) => `Hello ${name || "World"}`,
-    user: (_, { id }) => {
+    user: (_, { id }) => { 
       return getRepository(User).findOne(id);
     }
   },

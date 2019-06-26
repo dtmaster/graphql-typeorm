@@ -1,9 +1,12 @@
 {
   "type": "postgres",
-  "host": "localhost",
+  "host": "john.db.elephantsql.com",
   "port": 5432,
-  "database": "graphqldb",
+  "username": "hpsnbftz",
+  "password": "fSTz8OGYsYTHhK0H-b_KbSCLiFYYYigp",
+  "database": "hpsnbftz",
   "synchronize": true,
-  "logging": true,
+  "logging": false,
+
   "entities": ["src/entities/**/*.ts"]
 }
